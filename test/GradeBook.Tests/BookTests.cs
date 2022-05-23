@@ -17,5 +17,13 @@ namespace GradeBook.Tests
             Assert.Equal(55, results.high);
             Assert.Equal(50, results.average);
         }
+        [Fact]
+        public void BookValidatesGrade()
+        {
+            var book = new Book();
+            book.AddGrade(25);
+            book.AddGrade(103);
+            Assert.Equal(1, book.Count());
+        }
     }
 }
