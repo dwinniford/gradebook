@@ -5,6 +5,7 @@ namespace GradeBook
 {
     public class Book
     {       
+        // changes i don't want in test 1 branch
         public Book(string owner = "Grant") {
             grades = new List<double>();
             Owner = owner;
